@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "Navbar";
+// @import "Work";
+@import "Header";
+@import "Skills";
+@import "Project";
+@import "Service";
+@import "Contact";
+@import "Footer";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+:root {
+  --primary-color: #88cdf5;
+  --secondary-color: #c13256;
+  --black-color: #303340;
+  --light-color: #f1dde0;
+  --gray-color: #d7d9ec;
+}
+html,
+body {
+  color: var(--black-color);
+  overflow-x: hidden;
+  // background-color: #433503;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 0;
+  margin: 0;
+
+  // @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+  scroll-behavior: smooth;
+  // background: #fff;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+a {
+  // color: var(--gray-color);
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}

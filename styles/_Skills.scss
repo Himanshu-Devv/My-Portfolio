@@ -1,0 +1,77 @@
+.App__skills {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skills__heading {
+  // opacity: 0.8;
+  h1 {
+    color: var(--black-color);
+    background-color: var(--light-color);
+  }
+
+  div {
+    background: var(--gray-color);
+    width: 30px;
+    height: 1.2px;
+    margin-right: 10px;
+  }
+}
+.skills_info {
+  p {
+    color: var(--gray-color);
+  }
+}
+
+.skill_bars {
+  .bar {
+    background-color: #e6e6e6;
+    height: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    div {
+      height: 100%;
+      border-radius: 2px;
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+  }
+}
+
+.skills__container {
+  min-height: 500px;
+  height: auto;
+  h1 {
+    color: var(--black-color);
+  }
+}
+
+.skills_images {
+  max-height: 25rem;
+  width: 45%;
+
+  .image {
+    width: 60%;
+    scale: 1.2;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills__container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .skills_images {
+    // margin-top: 2rem;
+    width: 20rem;
+    .image {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+  }
+  .skills_info {
+    width: 100%;
+    max-width: 100%;
+  }
+}

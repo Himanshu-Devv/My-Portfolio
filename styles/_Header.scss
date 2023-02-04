@@ -1,0 +1,73 @@
+.App__header {
+  min-height: 39rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    #8383be,
+    #788cc8,
+    #6c95d0,
+    #5e9ed5,
+    #50a7d9
+  );
+  > div {
+    width: 90%;
+  }
+  .Header_about {
+    // margin-top: 4rem;
+    p {
+      font-size: 0.8rem;
+
+      color: var(--gray-color);
+    }
+    > p {
+      width: fit-content;
+      transform: translateX(-22px) translateY(32px) rotate(321deg);
+      color: var(--secondary-color);
+    }
+    .heading {
+      font-size: 3.5rem;
+      line-height: 4rem;
+      font-weight: 500;
+      color: var(--black-color);
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+    max-width: 350px;
+  }
+}
+
+.header__buttons {
+  margin: 1rem 0;
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    width: fit-content;
+    margin-right: 1rem;
+    svg {
+      margin-left: 0.35rem;
+    }
+  }
+  a:nth-child(1) {
+    color: #fff;
+    background-color: var(--secondary-color);
+  }
+  a:nth-child(2) {
+    color: var(--black-color);
+  }
+}
+
+.header_image {
+  max-width: 35rem;
+  height: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+  .header_intro {
+    flex-wrap: wrap;
+  }
+}

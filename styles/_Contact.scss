@@ -1,0 +1,39 @@
+.App__contact {
+  min-height: 30rem;
+  h1 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .form__container {
+    width: 60%;
+    div {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.8rem;
+      margin: 0.5rem 0;
+      p {
+        font-size: 0.5rem;
+        color: red;
+      }
+
+      input,
+      textarea {
+        background-color: var(--gray-color);
+        padding: 0.8rem;
+        font-size: 0.7rem;
+        color: var(--secondary-color);
+        outline: none;
+      }
+    }
+    .submitBtn {
+      padding: 0.8rem;
+      background-color: var(--secondary-color);
+      color: white;
+      border-radius: 0.3rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  }
+}
