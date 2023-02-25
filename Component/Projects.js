@@ -62,10 +62,10 @@ const Projects = () => {
                 initial="hidden"
                 whileInView="show">
                 <div className="card_img m-auto">
-                  <img src={`${urlFor(data.img)}`} alt="cardImg" />
+                  <img src={`${urlFor(data?.img)}`} alt="cardImg" />
                 </div>
                 <div className="card_title my-4 text-xl font-semibold">
-                  {data.title}
+                  {data?.title}
                 </div>
                 <div className="card_skill_img"></div>
                 <div className="card_description text-xs">
@@ -75,8 +75,8 @@ const Projects = () => {
                     })}
                   </ul>
                   <div className="card_buttons flex flex-row ml-4 mt-4 text-sm">
-                    <a href={data.projectLink}>View Project -&gt;</a>
-                    <a className="ml-6" href={data.codeLink}>
+                    <a href={data?.projectLink}>View Project -&gt;</a>
+                    <a className="ml-6" href={data?.codeLink}>
                       View code -&gt;
                     </a>
                   </div>
